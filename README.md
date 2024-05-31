@@ -17,6 +17,7 @@ A estrutura de pastas deste projeto segue as melhores práticas recomendadas par
 ├── functions
 │   └── dag_<name>
 │    └── function_name.py
+│
 ├── requirements.txt
 └── README.md
 
