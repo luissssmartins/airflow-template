@@ -1,6 +1,6 @@
 # Projeto Airflow
 
-Este repositório contém a configuração e os DAGs (Directed Acyclic Graphs) para o Apache Airflow. O Airflow é uma plataforma para programar, monitorar e gerenciar workflows.
+Este repositório contém a configuração e os DAGs (Directed Acyclic Graphs) para o Apache Airflow. O Airflow é uma plataforma para programar, monitorar e gerenciar workflows. Popurlamente conhecido como "orquestrador de tarefas".
 
 ## Estrutura de pastas
 
