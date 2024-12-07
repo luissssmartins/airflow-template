@@ -6,3 +6,7 @@ Nesta seção do projeto, deve conter os seguintes aspectos para que o deploy na
 
 Caso, o projeto contenha algum dataset que possa ser lido ou importado pelo Airflow, seja (.csv, .xsl, .xsl, .json). Deve estar localizado, nesta região
 para que seja lido corretamente.
+
+### Dataset externos
+
+Novos conectores para datasets podem ser utilizados, sejam eles BigQuery, AWS Buckets, e outros.
