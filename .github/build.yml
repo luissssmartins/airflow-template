@@ -42,19 +42,16 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: validate-dags
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
       - name: Deploy DAGs
         run: |
-        
-          echo "Realizando deploy dos DAGs..."
-          cp -r dags/* /usr/local/airflow/dags/
+          echo "Deploying project..."
 
-          echo "Listando DAGs..."
-          ls dags/
+          sudo mkdir -p $AIRFLOW_HOME/dags
+          sudo mkdir -p $AIRFLOW_HOME/data
+          sudo mkdir -p $AIRFLOW_HOME/functions
+
+          sudo chown -R $USER:$USER $AIRFLOW_HOME
+
+          cp -r ./dags/* $AIRFLOW_HOME/dags/
+          cp -r ./data/* $AIRFLOW_HOME/data/
+          cp -r ./functions/* $AIRFLOW_HOME/functions/
