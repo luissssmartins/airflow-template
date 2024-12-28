@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11.3'
+          python-version: '3.8'
 
       - name: Install dependencies for validation
         run: |
@@ -45,6 +45,8 @@ jobs:
       - name: Deploy DAGs
         run: |
           echo "Deploying project..."
+
+          export AIRFLOW_HOME=/home/ubuntu/airflow
 
           sudo mkdir -p $AIRFLOW_HOME/dags
           sudo mkdir -p $AIRFLOW_HOME/data
