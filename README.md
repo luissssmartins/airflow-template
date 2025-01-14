@@ -25,7 +25,20 @@ A estrutura de pastas deste projeto segue as melhores práticas recomendadas par
 
 ### Preparando o ambiente
 
-Após clonar este repositório, certifique-se que seu projeto contenha o arquivo ```README.md```.
+Após clonar este repositório, certifique-se que seu projeto possua um ambiente virtual criado.
+
+Caso não possua basta, realizar a criação do ambiente virtual utilizando o comando abaixo:
+
+```bash
+$ python -m venv venv
+```
+
+Após a criação do ambiente, basta estar realizando a instalação das dependências padrões:
+
+```bash
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
 
 ##### Definindo as dependências do projeto
 
